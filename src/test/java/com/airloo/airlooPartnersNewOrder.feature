@@ -1,4 +1,7 @@
 Feature: Submit order for eSIM
+
+  #Test are failing because the provided authentication is not working
+
   Background:
     * def authResponse = call read('auth.feature')
     * def token = authResponse.accessToken
